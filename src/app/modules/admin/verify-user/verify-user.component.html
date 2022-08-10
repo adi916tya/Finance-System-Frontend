@@ -1,0 +1,42 @@
+<header>
+    <div class="container">
+        <div class="header-left">
+            <a ><img class="logo" src="assets/Images/fms.png"> </a><!--(click)="gotoHome()"-->
+        </div>
+        <div class="header-content">
+            <h2 style="text-align: center;">Finance Management System</h2>
+            <p style="text-align: right; margin-top: -16px; ">
+            <p style="text-align: right;">HI Admin &nbsp; &nbsp;
+                <a >Logout</a><!--(click)="gotoHome()"-->
+            </p>
+        </div>
+    </div>
+</header>
+<div id="center">
+    <h2 style="text-align: center;">ACTIVE USER'S ACCOUNT</h2>
+    <table style=" 
+    padding: 15px 30px;
+    border-radius: 8px;
+    background-color:rgba(186, 220, 233, 0.5);
+    width: 20em;
+margin-left: auto;
+margin-right: auto;">
+    <tr>
+        <td>ACTIVE USER</td>
+        <td><input type="radio" id="yes" name="active_user" value="YES">
+              <label for="yes">YES</label>
+            <input type="radio" id="no" name="active_user" value="NO">
+  <label for="no">NO</label>
+            </td>
+    </tr>
+    <br>
+    <br>
+    <tr>
+        <td colspan="2" style="text-align: center;border-radius: 4px; padding: 10px 30px">
+            
+             <a (click)="goto()"><input type="submit" value="SUBMIT"></a>   
+                           
+        </td>      
+    </tr>
+</table>
+</div>

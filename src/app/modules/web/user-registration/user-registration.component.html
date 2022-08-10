@@ -1,0 +1,123 @@
+<header>
+    <div class="container">
+      <div class="header-left">
+       <a (click)="gotoHome()"><img class="logo" src="assets/Images/fms.png"> </a>
+      </div>
+        <div class="header-content">
+            <h2 style="text-align: center;" >Registration</h2>
+            <p style="text-align: right; margin-top: -16px; ">
+                <a (click)="onClick()" style="color:black" >Login</a> &nbsp;&nbsp;
+            </p>
+         </div>
+    </div>
+  </header><table cellpadding="8" width="800" class="registration">
+    <div style="text-align: center;">
+        <form name="regForm"  [formGroup]="registrationForm">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fName" size="30" tabindex="1" formControlName="firstName" placeholder="Enter ur First Name" autofocus
+                        required></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <input type="date" name="dob" id="dob"  formControlName="dob" tabindex="14">
+                </td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td>
+                    <input type="email" name="email" id="email" tabindex="16"  formControlName="email"  required>
+                </td>
+            </tr>
+            <tr>
+                <td>Contact Number</td>
+                <td>
+                    <input type="tel" name="contact" id="contact" tabindex="18" pattern="[0-9]{4}-[0-9]{6}"  formControlName="contact" required>
+                </td>
+            </tr>
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" name="uName" size="30" tabindex="3" placeholder="Enter ur User Name"  formControlName="userName" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pass" size="30" tabindex="4" placeholder="Enter ur Password"  formControlName="password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,14}" title="Must contain at least one number and
+                        one uppercase and lowercase letter, and at
+                        least 8 or max 14 characters" required></td>
+                <!-- (?=.*[a-z]) - At least one lowercase letter(a - z).
+                        (?=.*\d) - At least one Numeric Digit (0-9)
+                        (?=.*[A-Z]) - - At least one Upper case letter(A - Z).
+                        -->
+            </tr>
+
+            <tr>
+                <td>Confirm Password</td>
+                <td><input type="password" name="cpass" size="30" tabindex="5" placeholder="Confirm ur Password"  formControlName="confirmPass"
+                        minlength="8" maxlength="14" required></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea rows="5" cols="30" wrap="hard" tabindex="10"  formControlName="address">
+                        </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Card Type</td>
+                <td><input type="radio" id="gold" name="card_type" value="GOLD" >
+                      <label for="gold">GOLD</label>
+                    <input type="radio" id="titanium" name="card_type" value="TITANIUM" >
+                      <label for="titanium">TITANIUM</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Bank</td>
+                <td>
+                    <input list="bank" tabindex="12">
+                    <!-- Datalist - AutoComplete Feature-->
+                    <datalist id="bank" name="bank">
+                        <option>SBI</option>
+                        <option>CitiBank</option>
+                        <option>Canera</option>
+                        <option>Central</option>
+                        <option>ICICI</option>
+                        <option>HDFC</option>
+                        <option>IDFC</option>
+                        <option>Union Bank</option>
+                        <option>Kotak </option>
+                        <option>Axis</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Saving Account No.</td>
+                <td>
+                    <input type="tel" name="account" id="account" tabindex="18" pattern="[0-9]{4}-[0-9]{6}" formControlName="savingAcc"  required>
+                </td>
+            </tr>
+            <tr>
+                <td>IFSE code</td>
+                <td>
+                    <input type="tel" name="code" id="code" tabindex="18" pattern="[0-9]{4}-[0-9]{6}" required formControlName="ifse">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Register Me" (click)="onSubmit()"> &nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="Reset"  (click)="reset()"> 
+                </td>
+            </tr>
+        </form>
+    </div><div>
+        <footer style=" text-align: center; 
+        padding: px 110px;
+        margin-right: 30%;">
+    <h4>Already a Member? &nbsp;<a (click)="onClick()">Login Here</a></h4>
+        </footer>
+    </div>
+  
+</table>
+
+

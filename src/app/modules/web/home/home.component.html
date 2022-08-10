@@ -1,0 +1,59 @@
+<header>
+    <div class="container">
+      <div class="header-left">
+       <a (click)="gotoHome()"><img class="logo" src="assets/Images/fms.png"> </a>
+      </div>
+        <div class="header-content">
+            <h2 style="text-align: center;" >Finance Management System</h2>
+            <p style="text-align: right; margin-top: -16px; ">
+                <a [routerLink]="['registration']" style="color:black" >REGISTER </a> &nbsp;&nbsp;
+                <a [routerLink]="['userlogin']" style="color:black" >LOGIN</a>
+            </p>
+         </div>
+    </div>
+  </header>
+
+<hr>
+   <table class="table-home">
+       <tr>
+           <td rowspan="5"><img src="assets/Images/666.png" alt="Image"></td>
+           <td>&nbsp;</td>
+          <td>PRODUCT NAME: ASUSROGStrixG17G713IC-HX056W
+        </td>              
+       </tr>
+       <tr>
+           <td>&nbsp;</td>
+           <td>PRODUCT DETAILS:<ul>
+               <li>Processor: AMD Ryzen™ 7 4800H Mobile Processor (8-core/16-thread, 12MB Cache, 4.2 GHz Max Boost)</li>
+               <li>Memory: 8GB DDR4-3200 SO-DIMM expandable upto 32GB using 2x DDR4 SO-DIMM slots (includes in-use slot)</li>
+               <li>Storage: 512GB M.2 NVMe™ PCIe® 3.0 SSD</li>
+               <li>Graphics: NVIDIA® GeForce RTX™ 3050 Laptop GPU With ROG Boost up to 1840MHz at 80W (95W with Dynamic Boost) with 4GB GDDR6 VRAM</li>
+               <li>Display: 17.3-inch Anti-Glare FHD (1920 x 1080) display having 16:9 aspect ratio and 144Hz Refresh Rate</li>
+               <li>Operating System: Windows 11 Home</li>
+           </ul></td>
+          
+       </tr>
+       <tr>
+           <td>&nbsp;</td>
+           <td>COST:₹85,990.00</td>
+          
+       </tr>
+       <tr>
+           <td>&nbsp;</td>
+           
+           <td>
+            <div  style="text-align: center;">           
+                 <a [routerLink]="['userlogin']"><input type="submit"value="PAY NOW"></a>  
+            </div>
+           </td>
+       </tr>
+   </table>
+   <br>
+   <br>
+  <div class=f>
+   <h4>ELIGIBILITY</h4>
+   <p style="text-align: center;"><a [routerLink]="['TermsandCondition']">Terms and Condition</a>
+   </p>
+   <BR>
+   <p style="text-align: center;">Charges for registration and <br> EMI card details</p>
+   </div>

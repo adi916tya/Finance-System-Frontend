@@ -1,0 +1,64 @@
+<header>
+    <div class="container">
+      <div class="header-left">
+       <a (click)="gotoHome()"><img class="logo" src="assets/Images/fms.png"> </a>
+      </div>
+        <div class="header-content">
+            <h2 style="text-align: center;" >Login</h2>
+            <p style="text-align: right; margin-top: -16px; ">
+                <a (click)="onClick()" style="color:black" >REGISTER </a> &nbsp;&nbsp;
+            </p>
+         </div>
+    </div>
+  </header><table cellpadding="8" width="800" class="loginContene" >
+    <div style="text-align: center;">
+
+        <form name="logForm" [formGroup]="loginForm">
+            <tr>
+
+                <td>User Name</td>
+                <td><input type="text" name="email" size="30" tabindex="3" formControlName="email" placeholder="Email"
+                        [ngClass]="{ 'is-invalid': isSubmitted && formDetail.email?.errors }" required>
+                    <div class="invalid-feedback">
+                        <div *ngIf="isSubmitted && formDetail.email?.errors?.required">Email is required</div>
+                        <div *ngIf="isSubmitted && formDetail.email?.errors?.email">Email is invalid</div>
+
+                    </div>
+                </td>
+            </tr> 
+
+            <tr>
+
+                <td>Password</td>
+                <td><input type="password" name="pass" size="30" tabindex="4" placeholder="Enter your Password"
+                        formControlName="password" id="password" name="password" placeholder="Password"
+                        [ngClass]="{ 'is-invalid': isSubmitted && formDetail.password.errors }"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,14}" title="Must contain at least one number and
+            one uppercase and lowercase letter, and at
+            least 8 or max 14 characters" required>
+                    <div class="invalid-feedback">
+                        <div *ngIf="isSubmitted && formDetail.password?.errors?.required">Password is required</div>
+                    </div>
+                </td>
+                <!-- (?=.*[a-z]) - At least one lowercase letter(a - z).
+            (?=.*\d) - At least one Numeric Digit (0-9)
+            (?=.*[A-Z]) - - At least one Upper case letter(A - Z).
+            
+            -->
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <a (click)="onSubmit()"><input type="submit" value="LOG IN"></a> &nbsp;
+                    <a (click)="gotoForgetPage()">Forgot Password?</a>
+                </td>
+            </tr>
+
+        </form>
+    </div>
+    <footer style=" text-align: center; 
+padding: px 110px;
+margin-right: 30%;">
+
+        <h4>New User? &nbsp;<a (click)="onClick()">Register Here</a></h4>
+    </footer>
+</table>

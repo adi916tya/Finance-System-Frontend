@@ -1,0 +1,65 @@
+.header-content p a{
+    text-decoration: none;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  height: 110px;
+  width: 100%;
+  background-color: rgba(149, 203, 214, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  
+}
+.container{
+    margin-right: 80px;
+}
+.header-content{
+    margin-top: 30px;
+}
+.logo {
+    width: 50px;
+    margin-top: -2px;
+    margin-left: 50px;
+}
+
+.header-left {
+  float: left;
+}
+
+
+.productList{
+    margin-top: 150px;
+}
+
+h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-top: 25px;
+  color: rgb(26, 34, 139);
+  
+}
+.button{
+  
+  border:none;
+  color: white;
+  padding: 0 15px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 30px;
+  margin: -45px 5px;
+  cursor: pointer;
+  border-radius: 30px;
+  line-height: 50px;
+  background-color: rgba(62, 121, 209, 0.5);
+  float: right;
+}

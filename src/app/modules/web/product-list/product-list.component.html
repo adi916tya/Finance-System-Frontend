@@ -1,0 +1,74 @@
+<header>
+    <div class="container">
+        <div class="header-left">
+            <a (click)="gotoHome()"><img class="logo" src="assets/Images/fms.png"> </a>
+        </div>
+        <div class="header-content">
+            <h2 style="text-align: center;">Finance Management System</h2>
+            <p style="text-align: right; margin-top: -16px; ">
+            <p style="text-align: right;">HI USERNAME &nbsp; &nbsp;
+                <a (click)="gotoHome()">Logout</a>
+            </p>
+        </div>
+    </div>
+</header>
+<table cellpadding="7" class="productList">   <!-- <TR>
+<th>&nbsp;</th>
+<th> &nbsp; </th> 
+<th>HI USERNAME  <input type="submit" value="LOGOUT"></th>
+</TR> -->
+
+        <tr>
+            <td><img src="assets/Images/111.png" alt="image"></td>
+            <td>PRODUCT NAME: DELL Inspiron Core i5 11th Gen<BR>
+                PRODUCT DETAILS: 16 GB/512 GB SSD/Windows 10<BR>
+                COST: ₹78,990<BR>
+
+                <br><a (click)="gotoProductInfo()"><input type="submit" value="BUY NOW"></a>
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <td><img src="assets/Images/222.png" alt="image"></td>
+            <td>PRODUCT NAME: Lenovo IdeaPad Flex 5 Core i7<BR>
+                PRODUCT DETAILS: 16 GB/512 GB SSD/Windows 10 Home<BR>
+                COST: ₹85,990<BR>
+
+                    <br><a (click)="gotoProductInfo()"><input type="submit" value="BUY NOW"></a>
+                </td>
+        </tr>
+        <br>
+
+        <tr>
+            <td><img src="assets/Images/333.png" alt="image"> </td>
+            <td>PRODUCT NAME: ASUS ZenBook Duo 14 <BR>
+                PRODUCT DETAILS: 16 GB/512 GB SSD/Windows 10 Home/2 GB Graphics<BR>
+                COST: ₹1,05,990<BR>
+
+                    <br><a (click)="gotoProductInfo()"><input type="submit" value="BUY NOW"></a>
+                </td>
+        </tr>
+
+        <tr>
+            <td><img src="assets/Images/444.png" alt="image"> </td>
+            <td>PRODUCT NAME: ALIENWARE Core i7 10th Gen<BR>
+                PRODUCT DETAILS:16 GB/512 GB SSD/Windows 10 Home/6 GB Graphics/NVIDIA GeForce GTX 1660 Ti <BR>
+                COST: ₹1,99,990 10% off<BR>
+
+                    <br><a (click)="gotoProductInfo()"><input type="submit" value="BUY NOW"></a>
+                </td>
+        </tr>
+
+        <tr>
+            <td><img src="assets/Images/555.png" alt="image"> </td>
+            <td>PRODUCT NAME: Apple MacBook Pro <BR>
+                PRODUCT DETAILS: 8GB RAM, 512GB SSD, Apple M1 GPU,
+                33.78cm, Space Grey<BR>
+                COST: ₹129,900.00
+                (Incl. all Taxes)<BR>
+
+                    <br><a (click)="gotoProductInfo()"><input type="submit" value="BUY NOW"></a>
+                </td>
+        </tr>
+
+    </table>

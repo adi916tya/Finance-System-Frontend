@@ -1,0 +1,78 @@
+<header>
+    <div class="container">
+        <div class="header-left">
+            <a (click)="gotoHome()"><img class="logo" src="assets/Images/fms.png"> </a>
+        </div>
+        <div class="header-content">
+            <h2 style="text-align: center;">Finance Management System</h2>
+            <p style="text-align: right; margin-top: -16px; ">
+            <p style="text-align: right;">HI USERNAME &nbsp; &nbsp;
+                <a (click)="gotoHome()">Logout</a>
+            </p>
+        </div>
+    </div>
+</header>
+<table cellpadding="7">
+<hr>
+<table  class="table-home">
+<tr>
+    <td rowspan="5"><img src="assets/Images/555.png" alt="Image"></td>
+    <td>&nbsp;</td>
+    <td>PRODUCT NAME: Apple MacBook Pro  MYD82HNA</td>
+
+</tr>
+<tr>
+    <td>&nbsp;</td>
+    <td>PRODUCT DETAILS:<ul>
+        <li>Processor: Apple M1 Pro with 8-core CPU, 14-core GPU, 16-core Neural Engine</li>
+        <li>Memory: 16GB unified memory</li>
+        <li>Storage: 512GB SSD storage</li>
+        <li>Others: Three Thunderbolt 4 ports, HDMI port, SDXC card slot, MagSafe 3 port
+                Backlit Magic Keyboard with Touch ID - US English
+                </li>
+        <li>Display: 35.97 cm (14.2-inch) Liquid Retina XDR display</li>
+        <li>Operating System: Mac OS</li>
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td>&nbsp;</td>
+    <td>COST: ₹129,900.00
+        (Incl. all Taxes)</td>
+
+</tr>
+<tr>
+    <td>&nbsp;</td>
+
+    
+</tr>
+</table>
+
+<div class="e">
+    <h4 style="color: red; text-align: left;">EMI Period</h4>
+    <div class="emi" style="text-align: center;">
+    <select name="emi" id="emi" style="text-align: center;">
+        <optgroup label="EMI Period">
+          <option value="3 MONTHS">3 MONTHS</option>
+          <option value="6 MONTHS">6 MONTHS</option>
+          <option value="9 MONTHS">9 MONTHS</option>
+          <option value="1 YEAR">1 YEAR</option>
+        </optgroup>
+      </select>
+    </div>
+    <h4 style="text-align: left;">EMI STARTING 6000pm</h4>
+    <br>
+    <div style="text-align: center;">
+
+        <a (click)="onClick()"><input type="submit" value="PAY NOW"> </a>
+    </div>
+    <br>
+    
+</div>
+ <div class=f>
+    <h4>ELIGIBILITY</h4>
+    <p style="text-align: center;"><a [routerLink]="['TermsandCondition']">Terms and Condition</a>
+    </p>
+    <BR>
+    <p class="content" >Charges fir registration and <br> EMI card details</p>
+    </div>
